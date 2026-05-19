@@ -19,12 +19,12 @@ brew update && brew upgrade twelvedata
 ## Uninstall
 
 ```sh
-brew uninstall twelvedata
+brew uninstall --cask twelvedata
 brew untap twelvedata/cli
 ```
 
 ## How this tap is maintained
 
-The formula in `Formula/twelvedata.rb` is generated and committed automatically by [GoReleaser](https://goreleaser.com) from the [`twelvedata-cli`](https://github.com/twelvedata/twelvedata-cli) repository's release workflow. Each new tag in that repo bumps the formula's version and asset checksums.
+The cask in `Casks/twelvedata.rb` is generated and committed automatically by [GoReleaser](https://goreleaser.com) from the [`twelvedata-cli`](https://github.com/twelvedata/twelvedata-cli) repository's release workflow. Each new tag in that repo bumps the cask's version and asset checksums.
 
-Do not edit `Formula/twelvedata.rb` by hand — changes are overwritten on the next release.
+Do not edit `Casks/twelvedata.rb` by hand — changes are overwritten on the next release.
