@@ -5,13 +5,13 @@
 class Twelvedata < Formula
   desc "Twelve Data CLI — the official command-line client for the Twelve Data API"
   homepage "https://twelvedata.com"
-  version "1.0.9"
+  version "1.0.10"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/twelvedata/twelvedata-cli/releases/download/v1.0.9/twelvedata-darwin-x64.tar.gz"
-      sha256 "eacf72cc497694561e2dd21be24d688d79ea3b61c280c211020146ad58dd58ef"
+      url "https://github.com/twelvedata/twelvedata-cli/releases/download/v1.0.10/twelvedata-darwin-x64.tar.gz"
+      sha256 "6aa365f481e2c570ed67da85d88192712bed6a4b39aac6142123a494b8a56b88"
 
       define_method(:install) do
         bin.install "twelvedata"
@@ -24,8 +24,8 @@ class Twelvedata < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/twelvedata/twelvedata-cli/releases/download/v1.0.9/twelvedata-darwin-arm64.tar.gz"
-      sha256 "351581b44bd358b0181ec8b8121057e7048e202fdefb682ec3bffa1e812caf10"
+      url "https://github.com/twelvedata/twelvedata-cli/releases/download/v1.0.10/twelvedata-darwin-arm64.tar.gz"
+      sha256 "dd7b43c83649f3a9ede93e4c197e0e479f138650b6792de5fddf0bd18395cf8a"
 
       define_method(:install) do
         bin.install "twelvedata"
@@ -41,8 +41,8 @@ class Twelvedata < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/twelvedata/twelvedata-cli/releases/download/v1.0.9/twelvedata-linux-x64.tar.gz"
-      sha256 "f7f397ad40cd256ea0f22914afd54745b907ab43856a784c451faabe921ad78f"
+      url "https://github.com/twelvedata/twelvedata-cli/releases/download/v1.0.10/twelvedata-linux-x64.tar.gz"
+      sha256 "eb78bd50eb3e4b1e22d78cd59589671b5b13a8c666b937caa7a6c699181efcf7"
       define_method(:install) do
         bin.install "twelvedata"
         generate_completions_from_executable(
@@ -54,8 +54,8 @@ class Twelvedata < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/twelvedata/twelvedata-cli/releases/download/v1.0.9/twelvedata-linux-arm64.tar.gz"
-      sha256 "79af67916f2c7e57a0a45f31d087ac97995ae96561a8dd4c679a038f4e6e4455"
+      url "https://github.com/twelvedata/twelvedata-cli/releases/download/v1.0.10/twelvedata-linux-arm64.tar.gz"
+      sha256 "34f7bbff2ebc51260ceb8d87ca2a2863e68fe468745691868ab3224503eccaa8"
       define_method(:install) do
         bin.install "twelvedata"
         generate_completions_from_executable(
